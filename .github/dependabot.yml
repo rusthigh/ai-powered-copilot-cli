@@ -12,3 +12,6 @@ updates:
     labels:
       - "bot"
     open-pull-requests-limit: 5
+
+  - package-ecosystem: "github-actions"
+ 
