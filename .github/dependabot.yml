@@ -9,4 +9,6 @@ updates:
     directory: "/"
     schedule:
       interval: daily
-    lab
+    labels:
+      - "bot"
+    open-pull-requests-limit: 5
