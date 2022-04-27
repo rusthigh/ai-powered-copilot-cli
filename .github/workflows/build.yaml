@@ -22,4 +22,5 @@ jobs:
       - name: Log in to the Container registry
         uses: docker/login-action@v3
         with:
-          registry: ${{ env.REG
+          registry: ${{ env.REGISTRY }}
+          username: ${{ gith
