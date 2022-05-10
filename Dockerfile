@@ -17,4 +17,4 @@ RUN apk add --update curl wget python3 py3-pip && \
 COPY --from=builder /go/src/github.com/feiskyer/openai-copilot/_out/openai-copilot /usr/local/bin/
 
 USER copilot
-ENTR
+ENTRYPOINT [ "/usr/local/bin/openai-c
