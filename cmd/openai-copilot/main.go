@@ -6,4 +6,4 @@ import (
 	"os"
 
 	"github.com/fatih/color"
-	"gith
+	"github.com/feiskyer/openai-copilot/pkg/assistants"
