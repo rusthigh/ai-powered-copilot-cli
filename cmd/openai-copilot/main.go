@@ -20,4 +20,5 @@ var (
 	countTokens   bool
 	verbose       bool
 
-	// rootCmd represents the base command when called wi
+	// rootCmd represents the base command when called without any subcommands
+	rootCmd = &cobra.Comm
