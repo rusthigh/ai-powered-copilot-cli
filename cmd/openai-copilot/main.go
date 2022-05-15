@@ -15,4 +15,6 @@ import (
 var (
 	// global flags
 	model, prompt string
-	maxTokens   
+	maxTokens     int
+	maxIterations int
+	countTokens   b
