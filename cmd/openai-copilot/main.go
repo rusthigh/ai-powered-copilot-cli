@@ -20,4 +20,4 @@ var (
 	countTokens   bool
 	verbose       bool
 
-	// rootCmd represents
+	// rootCmd represents the base command when called wi
