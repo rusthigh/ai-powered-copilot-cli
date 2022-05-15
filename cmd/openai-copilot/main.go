@@ -9,4 +9,8 @@ import (
 	"github.com/feiskyer/openai-copilot/pkg/assistants"
 	"github.com/feiskyer/openai-copilot/pkg/consts"
 	"github.com/sashabaranov/go-openai"
-	
+	"github.com/spf13/cobra"
+)
+
+var (
+	// globa
