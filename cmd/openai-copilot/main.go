@@ -13,4 +13,6 @@ import (
 )
 
 var (
-	// globa
+	// global flags
+	model, prompt string
+	maxTokens   
