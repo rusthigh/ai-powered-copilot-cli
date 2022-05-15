@@ -21,4 +21,6 @@ var (
 	verbose       bool
 
 	// rootCmd represents the base command when called without any subcommands
-	rootCmd = &cobra.Comm
+	rootCmd = &cobra.Command{
+		Use:   "openai-copilot",
+		Short: "Open
