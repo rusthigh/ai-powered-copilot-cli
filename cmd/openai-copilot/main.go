@@ -17,4 +17,7 @@ var (
 	model, prompt string
 	maxTokens     int
 	maxIterations int
-	countTokens   b
+	countTokens   bool
+	verbose       bool
+
+	// rootCmd represents
