@@ -24,4 +24,10 @@ var (
 	rootCmd = &cobra.Command{
 		Use:   "openai-copilot",
 		Short: "OpenAI Copilot",
-		Run: func(cmd *cobra.Command, args 
+		Run: func(cmd *cobra.Command, args []string) {
+			chat()
+		},
+	}
+)
+
+func chat() 
