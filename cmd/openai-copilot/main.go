@@ -23,4 +23,5 @@ var (
 	// rootCmd represents the base command when called without any subcommands
 	rootCmd = &cobra.Command{
 		Use:   "openai-copilot",
-		Short: "Open
+		Short: "OpenAI Copilot",
+		Run: func(cmd *cobra.Command, args 
