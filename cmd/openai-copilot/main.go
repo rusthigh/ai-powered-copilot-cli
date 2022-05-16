@@ -30,4 +30,7 @@ var (
 	}
 )
 
-func chat() 
+func chat() {
+	var err error
+	var response string
+	messag
