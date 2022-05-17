@@ -35,4 +35,5 @@ func chat() {
 	var response string
 	messages := []openai.ChatCompletionMessage{
 		{
-			Ro
+			Role:    openai.ChatMessageRoleSystem,
+			Content
