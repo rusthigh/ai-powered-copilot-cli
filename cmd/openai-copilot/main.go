@@ -42,4 +42,5 @@ func chat() {
 
 	// Non-interactive mode
 	if prompt != "" {
-		messages = a
+		messages = append(messages, openai.ChatCompletionMessage{
+			R
