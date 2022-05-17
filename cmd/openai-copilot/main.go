@@ -33,4 +33,6 @@ var (
 func chat() {
 	var err error
 	var response string
-	messag
+	messages := []openai.ChatCompletionMessage{
+		{
+			Ro
