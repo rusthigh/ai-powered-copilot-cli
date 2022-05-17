@@ -36,4 +36,8 @@ func chat() {
 	messages := []openai.ChatCompletionMessage{
 		{
 			Role:    openai.ChatMessageRoleSystem,
-			Content
+			Content: consts.DefaultPrompt,
+		},
+	}
+
+	// Non-interactive 
