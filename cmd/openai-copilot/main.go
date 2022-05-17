@@ -40,4 +40,6 @@ func chat() {
 		},
 	}
 
-	// Non-interactive 
+	// Non-interactive mode
+	if prompt != "" {
+		messages = a
