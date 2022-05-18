@@ -46,4 +46,4 @@ func chat() {
 			Role:    openai.ChatMessageRoleUser,
 			Content: prompt,
 		})
-		response,
+		response, _, err = assistants.Assista
