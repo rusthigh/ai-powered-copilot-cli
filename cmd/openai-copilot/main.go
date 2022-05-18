@@ -43,4 +43,7 @@ func chat() {
 	// Non-interactive mode
 	if prompt != "" {
 		messages = append(messages, openai.ChatCompletionMessage{
-			Role:    openai.ChatMessageRoleUse
+			Role:    openai.ChatMessageRoleUser,
+			Content: prompt,
+		})
+		response,
