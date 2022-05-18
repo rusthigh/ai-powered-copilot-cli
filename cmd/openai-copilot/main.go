@@ -52,4 +52,8 @@ func chat() {
 			return
 		}
 
-		fmt.Print
+		fmt.Printf("%s\n\n", response)
+		return
+	}
+
+	// Interactive mode
