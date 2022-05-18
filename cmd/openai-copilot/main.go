@@ -48,4 +48,8 @@ func chat() {
 		})
 		response, _, err = assistants.Assistant(model, messages, maxTokens, countTokens, verbose, maxIterations)
 		if err != nil {
-	
+			color.Red(err.Error())
+			return
+		}
+
+		fmt.Print
