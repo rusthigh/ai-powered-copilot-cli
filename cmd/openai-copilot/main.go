@@ -61,4 +61,5 @@ func chat() {
 	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
 		message := scanner.Text()
-		messages = append(messages, openai.Cha
+		messages = append(messages, openai.ChatCompletionMessage{
+			Role:    openai.ChatMessageRoleU
