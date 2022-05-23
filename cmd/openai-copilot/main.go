@@ -60,4 +60,5 @@ func chat() {
 	color.New(color.FgYellow).Printf("You: ")
 	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
-		message := scanner.Text(
+		message := scanner.Text()
+		messages = append(messages, openai.Cha
