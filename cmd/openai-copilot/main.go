@@ -62,4 +62,7 @@ func chat() {
 	for scanner.Scan() {
 		message := scanner.Text()
 		messages = append(messages, openai.ChatCompletionMessage{
-			Role:    openai.ChatMessageRoleU
+			Role:    openai.ChatMessageRoleUser,
+			Content: message,
+		})
+		response, message
