@@ -59,4 +59,5 @@ func chat() {
 	// Interactive mode
 	color.New(color.FgYellow).Printf("You: ")
 	scanner := bufio.NewScanner(os.Stdin)
-	for scan
+	for scanner.Scan() {
+		message := scanner.Text(
