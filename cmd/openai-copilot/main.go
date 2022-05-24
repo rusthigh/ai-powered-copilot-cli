@@ -65,4 +65,4 @@ func chat() {
 			Role:    openai.ChatMessageRoleUser,
 			Content: message,
 		})
-		response, message
+		response, messages, err = assistants.Assistant(model, messages, maxToken
