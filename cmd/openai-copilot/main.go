@@ -67,4 +67,6 @@ func chat() {
 		})
 		response, messages, err = assistants.Assistant(model, messages, maxTokens, countTokens, verbose, maxIterations)
 		if err != nil {
-			col
+			color.Red(err.Error())
+			continue
+		}
