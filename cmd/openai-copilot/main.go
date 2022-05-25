@@ -65,4 +65,6 @@ func chat() {
 			Role:    openai.ChatMessageRoleUser,
 			Content: message,
 		})
-		response, messages, err = assistants.Assistant(model, messages, maxToken
+		response, messages, err = assistants.Assistant(model, messages, maxTokens, countTokens, verbose, maxIterations)
+		if err != nil {
+			col
