@@ -72,3 +72,5 @@ func chat() {
 		}
 
 		color.New(color.FgYellow).Printf("AI: ")
+		fmt.Printf("%s\n\n", response)
+		color.New
