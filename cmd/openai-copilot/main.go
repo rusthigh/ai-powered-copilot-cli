@@ -70,3 +70,5 @@ func chat() {
 			color.Red(err.Error())
 			continue
 		}
+
+		color.New(color.FgYellow).Printf("AI: ")
