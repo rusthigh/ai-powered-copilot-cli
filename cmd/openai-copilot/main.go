@@ -77,4 +77,5 @@ func chat() {
 	}
 }
 
-// init ini
+// init initializes the command line flags
+func init() {
