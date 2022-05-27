@@ -79,3 +79,4 @@ func chat() {
 
 // init initializes the command line flags
 func init() {
+	rootCmd.PersistentFlags().StringVarP(&model, "model
