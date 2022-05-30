@@ -79,4 +79,5 @@ func chat() {
 
 // init initializes the command line flags
 func init() {
-	rootCmd.PersistentFlags().StringVarP(&model, "model
+	rootCmd.PersistentFlags().StringVarP(&model, "model", "m", "gpt-4", "OpenAI model to use")
+	rootCm
