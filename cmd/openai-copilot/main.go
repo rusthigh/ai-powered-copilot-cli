@@ -80,4 +80,5 @@ func chat() {
 // init initializes the command line flags
 func init() {
 	rootCmd.PersistentFlags().StringVarP(&model, "model", "m", "gpt-4", "OpenAI model to use")
-	rootCmd.PersistentFlags().StringVarP(&prompt, "prompt", "p", "", "Prompts sent to GPT model for non-interactive mode. If not set, interactive 
+	rootCmd.PersistentFlags().StringVarP(&prompt, "prompt", "p", "", "Prompts sent to GPT model for non-interactive mode. If not set, interactive mode is used")
+	rootCmd.PersistentFlags().IntVarP(&maxT
