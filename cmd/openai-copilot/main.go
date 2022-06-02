@@ -84,4 +84,8 @@ func init() {
 	rootCmd.PersistentFlags().IntVarP(&maxTokens, "max-tokens", "t", 1024, "Max tokens for the GPT model")
 	rootCmd.PersistentFlags().IntVarP(&maxIterations, "max-iterations", "i", 3, "Max iterations for the conversations")
 	rootCmd.PersistentFlags().BoolVarP(&countTokens, "count-tokens", "c", false, "Print tokens count")
-	rootCmd.PersistentFlags().BoolVarP(&verbose, "verbose", "v", true, "Enable v
+	rootCmd.PersistentFlags().BoolVarP(&verbose, "verbose", "v", true, "Enable verbose output")
+}
+
+func main() {
+	
