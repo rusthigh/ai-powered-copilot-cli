@@ -82,4 +82,5 @@ func init() {
 	rootCmd.PersistentFlags().StringVarP(&model, "model", "m", "gpt-4", "OpenAI model to use")
 	rootCmd.PersistentFlags().StringVarP(&prompt, "prompt", "p", "", "Prompts sent to GPT model for non-interactive mode. If not set, interactive mode is used")
 	rootCmd.PersistentFlags().IntVarP(&maxTokens, "max-tokens", "t", 1024, "Max tokens for the GPT model")
-	rootCmd.PersistentFlags().IntVarP(&maxIterations, "max-iterations",
+	rootCmd.PersistentFlags().IntVarP(&maxIterations, "max-iterations", "i", 3, "Max iterations for the conversations")
+	root
