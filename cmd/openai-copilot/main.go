@@ -83,4 +83,4 @@ func init() {
 	rootCmd.PersistentFlags().StringVarP(&prompt, "prompt", "p", "", "Prompts sent to GPT model for non-interactive mode. If not set, interactive mode is used")
 	rootCmd.PersistentFlags().IntVarP(&maxTokens, "max-tokens", "t", 1024, "Max tokens for the GPT model")
 	rootCmd.PersistentFlags().IntVarP(&maxIterations, "max-iterations", "i", 3, "Max iterations for the conversations")
-	rootCmd.PersistentFlags().BoolVarP(&countTokens, 
+	rootCmd.PersistentFlags().BoolVarP(&countTokens, "count-tokens", "c", false, "Print tokens count
