@@ -131,3 +131,22 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 
 			// extract the tool prompt from the LLM response.
 			if err = json.Unmarshal([]byte(resp), &toolPrompt); err != nil {
+				if verbose {
+					color.Cyan("Unable to parse tools from LLM, summarizing the final answer.\n\n")
+				}
+
+				chatHistory = append(chatHistory, openai.ChatCompletionMessage{
+					Role:    openai.ChatMessageRoleUser,
+					Content: "Summarize all the chat history and respond to original question with final answer",
+				})
+
+				resp, err = client.Chat(model, maxTokens, chatHistory)
+				if err != nil {
+					return "", chatHistory, fmt.Errorf("chat completion error: %v", err)
+				}
+
+				return resp, chatHistory, nil
+			}
+		}
+	}
+}
