@@ -1,3 +1,3 @@
 package consts
 
-// Defau
+// DefaultPrompt is the default prompt for the AI assist
