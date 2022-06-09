@@ -80,3 +80,54 @@ func Assistant(model string, prompts []openai.ChatCompletionMessage, maxTokens i
 		if toolPrompt.FinalAnswer != "" {
 			if verbose {
 				color.Cyan("Final answer: %s\n\n", toolPrompt.FinalAnswer)
+			}
+			return toolPrompt.FinalAnswer, chatHistory, nil
+		}
+
+		if toolPrompt.Action.Name != "" {
+			if verbose {
+				color.Blue("Iteration %d): executing tool %s\n", iterations, toolPrompt.Action.Name)
+				color.Cyan("Invoking %s tool with inputs: \n============\n%s\n============\n\n", toolPrompt.Action.Name, toolPrompt.Action.Input)
+			}
+			ret, err := tools.CopilotTools[toolPrompt.Action.Name](toolPrompt.Action.Input)
+			observation := strings.TrimSpace(ret)
+			if err != nil {
+				observation = fmt.Sprintf("Tool %s failed with error %s. Considering refine the inputs for the tool.", toolPrompt.Action.Name, ret)
+			}
+			if verbose {
+				color.Cyan("Observation: %s\n\n", observation)
+			}
+
+			// Constrict the prompt to the max tokens allowed by the model.
+			// This is required because the tool may have generated a long output.
+			observation = llms.ConstrictPrompt(observation, model, 1024)
+			toolPrompt.Observation = observation
+			assistantMessage, _ := json.Marshal(toolPrompt)
+			chatHistory = append(chatHistory, openai.ChatCompletionMessage{
+				Role:    openai.ChatMessageRoleUser,
+				Content: string(assistantMessage),
+			})
+			// Constrict the chat history to the max tokens allowed by the model.
+			// This is required because the chat history may have grown too large.
+			chatHistory = llms.ConstrictMessages(chatHistory, model, maxTokens)
+
+			// Start next iteration of LLM chat.
+			if verbose {
+				color.Blue("Iteration %d): chatting with LLM\n", iterations)
+			}
+
+			resp, err := client.Chat(model, maxTokens, chatHistory)
+			if err != nil {
+				return "", chatHistory, fmt.Errorf("chat completion error: %v", err)
+			}
+
+			chatHistory = append(chatHistory, openai.ChatCompletionMessage{
+				Role:    openai.ChatMessageRoleAssistant,
+				Content: string(resp),
+			})
+			if verbose {
+				color.Cyan("Intermediate response from LLM: %s\n\n", resp)
+			}
+
+			// extract the tool prompt from the LLM response.
+			if err = json.Unmarshal([]byte(resp), &toolPrompt); err != nil {
