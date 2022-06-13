@@ -11,4 +11,5 @@ leveraged when you are unsure of the responses:
 Use this JSON format for responses:
 
 {
-	"q
+	"question": "<input question>",
+	"thought": "<your t
