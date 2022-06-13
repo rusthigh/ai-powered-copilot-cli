@@ -5,4 +5,5 @@ const DefaultPrompt = `You are a helpful AI assistant. Answer the following ques
 as best you can. You have access to the following tools and please ensure they are
 leveraged when you are unsure of the responses:
 
-- search: a search engine. useful for when you need to answer questions about current events. input should be a search query. output i
+- search: a search engine. useful for when you need to answer questions about current events. input should be a search query. output is the top search result.
+- python: a python int
