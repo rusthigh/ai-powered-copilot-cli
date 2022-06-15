@@ -15,4 +15,4 @@ Use this JSON format for responses:
 	"thought": "<your thought process>",
 	"action": {
 		"name": "<action to take, choose from tools [kubectl, python, trivy]. Do not set final_answer when an action is required>",
-		"input": "<input for 
+		"input": "<input for the action. ensure all contexts are 
