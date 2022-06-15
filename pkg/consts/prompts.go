@@ -18,4 +18,4 @@ Use this JSON format for responses:
 		"input": "<input for the action. ensure all contexts are added as input if required, e.g. raw YAML or image name.>"
 	},
 	"observation": "<result of the action, set by external tools>",
-	"final
+	"final_answer": "<your final findings, only set after com
