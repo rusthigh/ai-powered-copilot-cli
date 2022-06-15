@@ -14,4 +14,4 @@ Use this JSON format for responses:
 	"question": "<input question>",
 	"thought": "<your thought process>",
 	"action": {
-		"name": "<
+		"name": "<action to take, choose from tools [kubectl, 
