@@ -17,4 +17,5 @@ Use this JSON format for responses:
 		"name": "<action to take, choose from tools [kubectl, python, trivy]. Do not set final_answer when an action is required>",
 		"input": "<input for the action. ensure all contexts are added as input if required, e.g. raw YAML or image name.>"
 	},
-	"observation": "<result of t
+	"observation": "<result of the action, set by external tools>",
+	"final
