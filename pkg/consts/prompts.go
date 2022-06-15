@@ -12,4 +12,6 @@ Use this JSON format for responses:
 
 {
 	"question": "<input question>",
-	"thought": "<your t
+	"thought": "<your thought process>",
+	"action": {
+		"name": "<
