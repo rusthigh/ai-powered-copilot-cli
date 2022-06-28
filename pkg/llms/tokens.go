@@ -92,3 +92,31 @@ func NumTokensFromMessages(messages []openai.ChatCompletionMessage, model string
 
 // ConstrictMessages returns the messages that fit within the token limit.
 func ConstrictMessages(messages []openai.ChatCompletionMessage, model string, maxTokens int) []openai.ChatCompletionMessage {
+	tokenLimits := GetTokenLimits(model)
+	if maxTokens >= tokenLimits {
+		return nil
+	}
+
+	for {
+		numTokens := NumTokensFromMessages(messages, model)
+		if numTokens+maxTokens < tokenLimits {
+			return messages
+		}
+
+		// Remove the oldest message (keep the first one as it is usually the system prompt)
+		messages = append(messages[:1], messages[2:]...)
+	}
+}
+
+// ConstrictPrompt returns the prompt that fits within the token limit.
+func ConstrictPrompt(prompt string, model string, tokenLimits int) string {
+	for {
+		numTokens := NumTokensFromMessages([]openai.ChatCompletionMessage{{Content: prompt}}, model)
+		if numTokens < tokenLimits {
+			return prompt
+		}
+
+		// Remove the first thrid percent lines
+		lines := strings.Split(prompt, "\n")
+		lines = lines[int64(math.Ceil(float64(len(lines))/3)):]
+		prompt = strings.Join(lines, "\n")
