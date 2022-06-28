@@ -120,3 +120,9 @@ func ConstrictPrompt(prompt string, model string, tokenLimits int) string {
 		lines := strings.Split(prompt, "\n")
 		lines = lines[int64(math.Ceil(float64(len(lines))/3)):]
 		prompt = strings.Join(lines, "\n")
+
+		if strings.TrimSpace(prompt) == "" {
+			return ""
+		}
+	}
+}
