@@ -9,4 +9,4 @@ import (
 	option "google.golang.org/api/option"
 )
 
-// GoogleSearch ret
+// GoogleSearch returns the results of a Google search for the give
