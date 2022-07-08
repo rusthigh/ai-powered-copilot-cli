@@ -10,4 +10,5 @@ import (
 )
 
 // GoogleSearch returns the results of a Google search for the given query.
-func GoogleSearch(query string) (s
+func GoogleSearch(query string) (string, error) {
+	svc, err := customsearch.NewSer
