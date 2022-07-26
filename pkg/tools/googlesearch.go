@@ -17,4 +17,8 @@ func GoogleSearch(query string) (string, error) {
 	}
 
 	resp, err := svc.Cse.List().Cx(os.Getenv("GOOGLE_CSE_ID")).Q(query).Do()
-	if err != 
+	if err != nil {
+		return "", err
+	}
+
+	results 
