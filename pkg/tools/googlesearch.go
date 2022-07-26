@@ -21,4 +21,6 @@ func GoogleSearch(query string) (string, error) {
 		return "", err
 	}
 
-	results 
+	results := ""
+	for _, result := range resp.Items {
+		resu
