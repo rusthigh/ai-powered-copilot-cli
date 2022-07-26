@@ -23,4 +23,7 @@ func GoogleSearch(query string) (string, error) {
 
 	results := ""
 	for _, result := range resp.Items {
-		results += fmt.Sprintf("%s: %s\n", result.Title,
+		results += fmt.Sprintf("%s: %s\n", result.Title, result.Snippet)
+	}
+	return results, nil
+}
