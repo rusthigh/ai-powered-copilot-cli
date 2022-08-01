@@ -5,4 +5,5 @@ import (
 	"strings"
 )
 
-// PythonREPL runs the given Python script and returns the outpu
+// PythonREPL runs the given Python script and returns the output.
+func PythonREPL(script string) (string,
