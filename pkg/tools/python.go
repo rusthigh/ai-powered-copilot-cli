@@ -6,4 +6,5 @@ import (
 )
 
 // PythonREPL runs the given Python script and returns the output.
-func PythonREPL(script string) (string,
+func PythonREPL(script string) (string, error) {
+	cmd := exec.Command("python3", "
