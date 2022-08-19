@@ -11,4 +11,5 @@ var CopilotTools = map[string]Tool{
 	"kubectl": Kubectl,
 }
 
-// ToolPro
+// ToolPrompt is the JSON format for the prompt.
+ty
