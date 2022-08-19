@@ -8,4 +8,7 @@ var CopilotTools = map[string]Tool{
 	"search":  GoogleSearch,
 	"python":  PythonREPL,
 	"trivy":   Trivy,
-	
+	"kubectl": Kubectl,
+}
+
+// ToolPro
