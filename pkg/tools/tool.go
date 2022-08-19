@@ -4,4 +4,5 @@ package tools
 type Tool func(input string) (string, error)
 
 // CopilotTools is a map of tool names to tools.
-var CopilotTool
+var CopilotTools = map[string]Tool{
+	"search":  GoogleS
