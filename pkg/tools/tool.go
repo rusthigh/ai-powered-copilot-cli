@@ -16,4 +16,5 @@ type ToolPrompt struct {
 	Question string `json:"question"`
 	Thought  string `json:"thought,omitempty"`
 	Action   struct {
-		Nam
+		Name  string `json:"name"`
+		Input string `json:"input"`
