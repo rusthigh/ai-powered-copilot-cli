@@ -6,4 +6,5 @@ import (
 )
 
 // Trivy runs trivy against the image and returns the output
-func
+func Trivy(image string) (string, error) {
+	im
