@@ -14,4 +14,5 @@ func Trivy(image string) (string, error) {
 	cmd := exec.Command("trivy", "image", image, "--scanners", "vuln")
 
 	output, err := cmd.CombinedOutput()
-	if err != 
+	if err != nil {
+		return strings.TrimSpa
