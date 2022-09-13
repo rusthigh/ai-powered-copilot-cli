@@ -11,4 +11,6 @@ func Trivy(image string) (string, error) {
 	if strings.HasPrefix(image, "image ") {
 		image = strings.TrimPrefix(image, "image ")
 	}
-	cmd := exec.Command
+	cmd := exec.Command("trivy", "image", image, "--scanners", "vuln")
+
+	out
