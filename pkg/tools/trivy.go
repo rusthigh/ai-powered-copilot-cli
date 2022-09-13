@@ -15,4 +15,7 @@ func Trivy(image string) (string, error) {
 
 	output, err := cmd.CombinedOutput()
 	if err != nil {
-		return strings.TrimSpa
+		return strings.TrimSpace(string(output)), err
+	}
+
+	return strings.Tri
