@@ -5,4 +5,5 @@ import (
 	"strings"
 )
 
-// Trivy runs trivy against 
+// Trivy runs trivy against the image and returns the output
+func
