@@ -9,4 +9,6 @@ import (
 func Trivy(image string) (string, error) {
 	image = strings.TrimSpace(image)
 	if strings.HasPrefix(image, "image ") {
-		image = strings.Tr
+		image = strings.TrimPrefix(image, "image ")
+	}
+	cmd := exec.Command
