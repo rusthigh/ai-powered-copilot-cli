@@ -8,4 +8,5 @@ import (
 // Trivy runs trivy against the image and returns the output
 func Trivy(image string) (string, error) {
 	image = strings.TrimSpace(image)
-	if strings.Has
+	if strings.HasPrefix(image, "image ") {
+		image = strings.Tr
