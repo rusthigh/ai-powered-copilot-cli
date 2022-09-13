@@ -2,4 +2,7 @@ package tools
 
 import (
 	"os/exec"
-	"strin
+	"strings"
+)
+
+// Trivy runs trivy against 
