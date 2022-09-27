@@ -18,4 +18,5 @@ func Trivy(image string) (string, error) {
 		return strings.TrimSpace(string(output)), err
 	}
 
-	return strings.Tri
+	return strings.TrimSpace(string(output)), nil
+}
