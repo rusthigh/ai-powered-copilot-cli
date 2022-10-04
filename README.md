@@ -10,4 +10,6 @@ Features:
 
 ## Install
 
-In
+Install the copilot with the commands below:
+
+```
