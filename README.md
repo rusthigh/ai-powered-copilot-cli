@@ -6,4 +6,4 @@ Features:
 
 * Web access and Google search support without leaving the terminal.
 * Automatically execute any steps predicted from prompt instructions.
-* Human interactions 
+* Human interactions on uncertain instructions to avoi
