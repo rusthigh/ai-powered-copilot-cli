@@ -6,4 +6,8 @@ Features:
 
 * Web access and Google search support without leaving the terminal.
 * Automatically execute any steps predicted from prompt instructions.
-* Human interactions on uncertain instructions to avoi
+* Human interactions on uncertain instructions to avoid inappropriate operations.
+
+## Install
+
+In
