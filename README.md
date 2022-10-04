@@ -13,4 +13,7 @@ Features:
 Install the copilot with the commands below:
 
 ```sh
-go install github.com/rusthigh/ai-powered-copilo
+go install github.com/rusthigh/ai-powered-copilot-cli/cmd/ai-powered-copilot-cli@latest
+```
+
+#
