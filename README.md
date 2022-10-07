@@ -16,4 +16,6 @@ Install the copilot with the commands below:
 go install github.com/rusthigh/ai-powered-copilot-cli/cmd/ai-powered-copilot-cli@latest
 ```
 
-#
+## Setup
+
+* OpenAI API key should be set to `OPENAI_AP
