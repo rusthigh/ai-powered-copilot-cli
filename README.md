@@ -18,4 +18,4 @@ go install github.com/rusthigh/ai-powered-copilot-cli/cmd/ai-powered-copilot-cli
 
 ## Setup
 
-* OpenAI API key should be set to `OPENAI_AP
+* OpenAI API key should be set to `OPENAI_API_KEY` environment variable to enable the ChatGPT f
