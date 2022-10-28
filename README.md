@@ -20,4 +20,4 @@ go install github.com/rusthigh/ai-powered-copilot-cli/cmd/ai-powered-copilot-cli
 
 * OpenAI API key should be set to `OPENAI_API_KEY` environment variable to enable the ChatGPT feature.
   * `OPENAI_API_BASE` should be set as well for Azure OpenAI service and other self-hosted OpenAI services.
-* Google Search API key and CSE ID should be set
+* Google Search API key and CSE ID should be set to `GOOGLE_API_KEY` and `GOOGLE_CSE_ID`.
