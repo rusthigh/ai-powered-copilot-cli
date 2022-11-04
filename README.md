@@ -29,4 +29,5 @@ Usage:
   ai-powered-copilot-cli [flags]
 
 Flags:
-  -c, --count-tokens     Pr
+  -c, --count-tokens     Print tokens count
+  -h, --help      
