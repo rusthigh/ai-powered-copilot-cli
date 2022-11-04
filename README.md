@@ -26,4 +26,7 @@ go install github.com/rusthigh/ai-powered-copilot-cli/cmd/ai-powered-copilot-cli
 
 ```sh
 Usage:
-  ai-powered-copilot-cli
+  ai-powered-copilot-cli [flags]
+
+Flags:
+  -c, --count-tokens     Pr
