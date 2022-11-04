@@ -31,4 +31,5 @@ Usage:
 Flags:
   -c, --count-tokens     Print tokens count
   -h, --help             help for ai-powered-copilot-cli
-  -t, --max-tokens int   Max tokens f
+  -t, --max-tokens int   Max tokens for the GPT model (default 1024)
+  -m, 
