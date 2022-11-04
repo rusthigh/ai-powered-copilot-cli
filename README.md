@@ -30,4 +30,4 @@ Usage:
 
 Flags:
   -c, --count-tokens     Print tokens count
-  -h, --help      
+  -h, --help             help for ai-powered-copilot-c
