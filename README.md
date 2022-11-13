@@ -39,4 +39,7 @@ Flags:
 
 ### Interactive mode
 
-Here is a conversation sample (user i
+Here is a conversation sample (user inputs are after `You:`):
+
+```sh
+$ ai-powered-
