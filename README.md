@@ -37,4 +37,6 @@ Flags:
   -v, --verbose          Enable verbose output (default true)
 ```
 
-### Interac
+### Interactive mode
+
+Here is a conversation sample (user i
