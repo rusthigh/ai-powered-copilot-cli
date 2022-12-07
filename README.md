@@ -52,4 +52,7 @@ You:
 ### Non-interactive mode
 
 ```sh
-$ ai-powered-copilot-cli 
+$ ai-powered-copilot-cli -p 'What is OpenAI?'
+Initial response from LLM:
+{
+ "que
