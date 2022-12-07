@@ -49,4 +49,7 @@ AI: OpenAI is an artificial intelligence research lab, which includes a for-prof
 You:
 ```
 
-### Non-interacti
+### Non-interactive mode
+
+```sh
+$ ai-powered-copilot-cli 
