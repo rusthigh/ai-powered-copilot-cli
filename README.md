@@ -55,4 +55,5 @@ You:
 $ ai-powered-copilot-cli -p 'What is OpenAI?'
 Initial response from LLM:
 {
- "que
+ "question": "What is OpenAI?",
+ "thought": "Ope
