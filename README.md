@@ -56,4 +56,4 @@ $ ai-powered-copilot-cli -p 'What is OpenAI?'
 Initial response from LLM:
 {
  "question": "What is OpenAI?",
- "thought": "Ope
+ "thought": "OpenAI is a well-known organization in the field
