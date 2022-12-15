@@ -61,4 +61,4 @@ Initial response from LLM:
   "name": "search",
   "input": "OpenAI"
  },
- "observation": "OpenAI is an artifi
+ "observation": "OpenAI is an artificial intelligence research lab consis
