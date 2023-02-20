@@ -76,4 +76,6 @@ AI: OpenAI is an artificial intelligence research lab made up of a for-profit ar
 
 Please note that the original project (version number < v0.5.0) is written in Python 3 and the codes are in [main](https://github.com/rusthigh/ai-powered-copilot-cli/tree/main) branch.
 
-## Co
+## Contribution
+
+This project is open source under
