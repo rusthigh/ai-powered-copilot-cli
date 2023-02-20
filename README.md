@@ -78,4 +78,6 @@ Please note that the original project (version number < v0.5.0) is written in Py
 
 ## Contribution
 
-This project is open source under
+This project is open source under the Apache License.
+
+If you would like to contrib
