@@ -83,4 +83,5 @@ This project is open source under the Apache License.
 If you would like to contribute to the project, please follow these guidelines:
 
 1. Fork the repository and clone it to your local machine.
-2. Create a new branch for
+2. Create a new branch for your changes.
+3. Make your changes and commit them with
