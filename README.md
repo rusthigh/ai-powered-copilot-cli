@@ -80,4 +80,6 @@ Please note that the original project (version number < v0.5.0) is written in Py
 
 This project is open source under the Apache License.
 
-If you would like to contribute to the project, please follow these
+If you would like to contribute to the project, please follow these guidelines:
+
+1. Fork the repository and clone it 
