@@ -1,4 +1,3 @@
-
 module github.com/feiskyer/openai-copilot
 
 go 1.22.0
@@ -8,7 +7,7 @@ toolchain go1.22.2
 require (
 	github.com/fatih/color v1.16.0
 	github.com/pkoukk/tiktoken-go v0.1.6
-	github.com/sashabaranov/go-openai v1.23.0
+	github.com/sashabaranov/go-openai v1.32.1
 	github.com/spf13/cobra v1.8.0
 	google.golang.org/api v0.177.0
 )
